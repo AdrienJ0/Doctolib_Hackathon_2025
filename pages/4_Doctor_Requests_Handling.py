@@ -37,6 +37,10 @@ new_requests = pd.DataFrame({
         "Fatigue and muscle weakness",
         "Abdominal pain and nausea"
     ],
+    "temperature": np.random.uniform(36.0, 39.0, 5),
+    "heart_rate": np.random.randint(60, 120, 5),
+    "blood_pressure": ["120/80", "140/90", "110/70", "130/85", "125/78"],
+    "oxygen_saturation": np.random.uniform(90, 100, 5),
     "patient_consent": [True, False, True, True, False],
     "request_date": [datetime.datetime.now() - datetime.timedelta(days=i) for i in range(5)],
 })
@@ -113,6 +117,10 @@ else:
         if row["patient_consent"]:
             with st.expander("View Full Patient Summary"):
                 st.write(f"**Summary:** {row['summary']}")
+                st.write(f"**Temperature:** {row['temperature']:.1f}°C")
+                st.write(f"**Heart Rate:** {row['heart_rate']} BPM")
+                st.write(f"**Blood Pressure:** {row['blood_pressure']}")
+                st.write(f"**Oxygen Saturation:** {row['oxygen_saturation']:.1f}%")
         else:
             st.write("🔒 Patient has not consented to share full medical data. Only symptom severity is available.")
         
