@@ -18,6 +18,12 @@ MEDICAL_SPECIALTIES = {
     "skin": "Dermatology"
 }
 
+RESPONSE_CATEGORIES = {
+    "summary": "Summarize the patient's symptoms clearly and concisely.",
+    "next_steps": "Provide the next recommended actions (e.g., visit a doctor, monitor symptoms, check parameters).",
+    "actions": "Suggest a specialty and potential doctors, or take an action (e.g., book an appointment)."
+}
+
 app = FastAPI()
 
 class ChatRequest(BaseModel):
@@ -32,6 +38,17 @@ def detect_specialty(text: str) -> str:
                 return specialty
     return "General Medicine"
 
+def restrict_response_format(response_text: str) -> str:
+    """Ensure response follows one of the three categories and avoids diagnosis or prescriptions."""
+    restricted_phrases = ["diagnosis", "prescribe", "medication", "drug"]
+    for phrase in restricted_phrases:
+        if phrase in response_text.lower():
+            return "I'm sorry, but I cannot provide a diagnosis or prescribe medication. Please consult a medical professional."
+    for category, instruction in RESPONSE_CATEGORIES.items():
+        if category in response_text.lower():
+            return response_text
+    return "I'm sorry, but I can only provide a summary, next steps, or suggested actions. Please clarify your question."
+
 @app.post("/chat")
 def chat(request: ChatRequest):
     if not request.conversation:
@@ -41,15 +58,25 @@ def chat(request: ChatRequest):
     user_message = request.conversation[-1]
     specialty = detect_specialty(user_message)
     
-    # Modify prompt with detected specialty
+    # Modify prompt with controlled response types
     prompt = (f"You are an AI medical assistant specializing in {specialty}. "
-              "Answer the patient's question in a clear and empathetic way.\n\n"
+              "Your responses must be strictly within these categories:\n"
+              "1. Summary of symptoms\n"
+              "2. Next steps (e.g., book appointment, check parameters)\n"
+              "3. Suggested actions (e.g., suggest a doctor, book an appointment)\n"
+              "\n"
+              "You cannot provide a diagnosis or prescribe medication. Your role is to offer general guidance and suggest next steps.\n"
+              "\n"
+              "Important: You are not a real doctor and do not have medical authority. Your responses should always remind users to consult a healthcare professional for actual medical decisions.\n"
+              "\n\n"
               + "\n".join(request.conversation) + "\nAI:")
     
     # Call OpenAI API
     response = openai.ChatCompletion.create(
-        model="gpt-4",  # Use GPT-4 or GPT-3.5
+        model="gpt-4",
         messages=[{"role": "user", "content": prompt}]
     )
     
-    return {"response": response["choices"][0]["message"]["content"]}
+    formatted_response = restrict_response_format(response["choices"][0]["message"]["content"])
+    
+    return {"response": formatted_response}
