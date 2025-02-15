@@ -93,6 +93,7 @@ st.session_state.questions = [
     "Do you have any pre-existing conditions?",
     "Have you seen a doctor recently?",
     "Are you on any medication?"
+    "What is your address ? City and street ?"
 ]
 
 if __name__ == "__main__":

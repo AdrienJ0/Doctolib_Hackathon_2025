@@ -1,0 +1,101 @@
+doctor_id,name,specialization,address,latitude,longitude,next_appointment_1,next_appointment_2,next_appointment_3
+1,Olivie Richard Le Coste,Médecin Généraliste,"7 Avenue de la Grande Armée, Paris 17",48.87764,2.307665,2025-02-22 23:03:59,2025-02-23 02:03:59,2025-02-23 02:03:59
+2,Guy Breton,Orthopédiste,"4 Rue de l'Esplanade, Paris 17",48.879613,2.30733,2025-02-23 01:03:59,2025-02-23 02:03:59,2025-02-23 02:03:59
+3,Alexandre Lopez-Bernier,Dermatologue,"4 Rue de l'Esplanade, Paris 17",48.883957,2.307242,2025-02-17 23:03:59,2025-02-18 00:03:59,2025-02-17 23:03:59
+4,Alexandrie Collet-Ollivier,Neurologue,"8 Rue de Ponthieu, Paris 17",48.88332,2.309843,2025-02-20 01:03:59,2025-02-20 00:03:59,2025-02-20 00:03:59
+5,Édouard Lejeune,Orthopédiste,"2 Rue de l'Armée, Paris 17",48.878856,2.303086,2025-02-22 03:03:59,2025-02-22 02:03:59,2025-02-22 02:03:59
+6,André Blanchard-Lefebvre,Orthopédiste,"10 Rue de la Plage, Paris 17",48.871728,2.305003,2025-02-19 23:03:59,2025-02-20 00:03:59,2025-02-20 01:03:59
+7,David Gilles du Marin,Chirurgien,"3 Rue de la Maison, Paris 17",48.886541,2.316362,2025-02-25 23:03:59,2025-02-26 02:03:59,2025-02-26 03:03:59
+8,Théophile de Martinez,Neurologue,"7 Avenue de la Grande Armée, Paris 17",48.888806,2.309649,2025-02-18 23:03:59,2025-02-19 02:03:59,2025-02-19 01:03:59
+9,Arthur Garcia,Chirurgien,"10 Rue de la Plage, Paris 17",48.890744,2.310249,2025-02-19 23:03:59,2025-02-20 01:03:59,2025-02-20 02:03:59
+10,Margaud Roux de la Bonnin,Psychiatre,"3 Rue de la Maison, Paris 17",48.87789,2.307953,2025-02-17 03:03:59,2025-02-17 02:03:59,2025-02-17 01:03:59
+11,Benoît Aubry,Gynécologue,"9 Rue de la Ville, Paris 17",48.877308,2.309745,2025-02-18 02:03:59,2025-02-18 00:03:59,2025-02-18 01:03:59
+12,Jérôme-Thibault Techer,Cardiologue,"9 Rue de la Ville, Paris 17",48.887125,2.304093,2025-02-23 02:03:59,2025-02-22 23:03:59,2025-02-23 02:03:59
+13,Michelle-Inès Pinto,Cardiologue,"10 Rue de la Plage, Paris 17",48.874244,2.313057,2025-02-26 01:03:59,2025-02-25 23:03:59,2025-02-26 00:03:59
+14,Christelle Joseph,Neurologue,"3 Rue de la Maison, Paris 17",48.873975,2.30909,2025-02-20 03:03:59,2025-02-20 02:03:59,2025-02-20 02:03:59
+15,Alphonse Hubert-Bertin,Dermatologue,"1 Rue de la Fédération, Paris 17",48.88653,2.313842,2025-02-25 23:03:59,2025-02-26 00:03:59,2025-02-26 02:03:59
+16,Alphonse Lejeune,Chirurgien,"6 Rue de Tocqueville, Paris 17",48.887837,2.307636,2025-02-22 03:03:59,2025-02-22 02:03:59,2025-02-21 23:03:59
+17,Marc Michel,Gynécologue,"7 Avenue de la Grande Armée, Paris 17",48.880085,2.306054,2025-02-18 23:03:59,2025-02-18 23:03:59,2025-02-19 02:03:59
+18,Éric Marin,Dermatologue,"1 Rue de la Fédération, Paris 17",48.877402,2.311044,2025-02-19 00:03:59,2025-02-19 03:03:59,2025-02-18 23:03:59
+19,Frédérique-Alexandria Hamel,Médecin Généraliste,"8 Rue de Ponthieu, Paris 17",48.870969,2.309572,2025-02-23 03:03:59,2025-02-23 03:03:59,2025-02-23 03:03:59
+20,Benoît Labbé,Médecin Généraliste,"10 Rue de la Plage, Paris 17",48.883865,2.32021,2025-02-26 01:03:59,2025-02-26 03:03:59,2025-02-26 02:03:59
+21,Émilie Robert,Cardiologue,"2 Rue de l'Armée, Paris 17",48.875875,2.320343,2025-02-17 03:03:59,2025-02-16 23:03:59,2025-02-16 23:03:59
+22,Gabrielle Letellier,Neurologue,"2 Rue de l'Armée, Paris 17",48.872747,2.31304,2025-02-22 03:03:59,2025-02-22 00:03:59,2025-02-22 03:03:59
+23,Constance Leduc,Dermatologue,"6 Rue de Tocqueville, Paris 17",48.873404,2.321297,2025-02-18 03:03:59,2025-02-18 01:03:59,2025-02-18 00:03:59
+24,Matthieu Pons,Pédiatre,"5 Boulevard Pereire, Paris 17",48.88161,2.304281,2025-02-25 23:03:59,2025-02-26 01:03:59,2025-02-25 23:03:59
+25,Inès Becker-Gosselin,Chirurgien,"3 Rue de la Maison, Paris 17",48.884695,2.316821,2025-02-21 23:03:59,2025-02-21 23:03:59,2025-02-22 02:03:59
+26,Noël Marie,Médecin Généraliste,"2 Rue de l'Armée, Paris 17",48.881939,2.309904,2025-02-20 02:03:59,2025-02-20 00:03:59,2025-02-20 02:03:59
+27,Valérie-Adélaïde Lebreton,Gynécologue,"2 Rue de l'Armée, Paris 17",48.887504,2.318532,2025-02-21 02:03:59,2025-02-21 03:03:59,2025-02-21 00:03:59
+28,Christophe Meunier,Psychiatre,"8 Rue de Ponthieu, Paris 17",48.878156,2.312446,2025-02-21 00:03:59,2025-02-21 00:03:59,2025-02-21 03:03:59
+29,Aimé Bailly,Dermatologue,"5 Boulevard Pereire, Paris 17",48.877992,2.31732,2025-02-20 02:03:59,2025-02-20 02:03:59,2025-02-19 23:03:59
+30,Étienne Vidal,Gynécologue,"7 Avenue de la Grande Armée, Paris 17",48.878399,2.313613,2025-02-20 23:03:59,2025-02-21 03:03:59,2025-02-20 23:03:59
+31,Julien Girard,Pédiatre,"7 Avenue de la Grande Armée, Paris 17",48.877516,2.3181,2025-02-18 02:03:59,2025-02-18 02:03:59,2025-02-18 03:03:59
+32,André Maury,Dermatologue,"7 Avenue de la Grande Armée, Paris 17",48.872179,2.30337,2025-02-25 23:03:59,2025-02-25 23:03:59,2025-02-25 23:03:59
+33,Alfred Da Costa,Pédiatre,"7 Avenue de la Grande Armée, Paris 17",48.875271,2.319376,2025-02-23 03:03:59,2025-02-23 00:03:59,2025-02-22 23:03:59
+34,André du Dufour,Orthopédiste,"2 Rue de l'Armée, Paris 17",48.877793,2.3095,2025-02-23 23:03:59,2025-02-24 03:03:59,2025-02-24 00:03:59
+35,Catherine Guillaume de Techer,Pédiatre,"6 Rue de Tocqueville, Paris 17",48.871868,2.306447,2025-02-22 00:03:59,2025-02-21 23:03:59,2025-02-22 01:03:59
+36,Anastasie Reynaud,Chirurgien,"4 Rue de l'Esplanade, Paris 17",48.873707,2.307118,2025-02-20 01:03:59,2025-02-20 02:03:59,2025-02-19 23:03:59
+37,Célina Le Guyon,Médecin Généraliste,"6 Rue de Tocqueville, Paris 17",48.886367,2.315488,2025-02-19 00:03:59,2025-02-19 03:03:59,2025-02-19 03:03:59
+38,Marguerite Bourdon-Chevalier,Orthopédiste,"8 Rue de Ponthieu, Paris 17",48.878019,2.311079,2025-02-24 02:03:59,2025-02-23 23:03:59,2025-02-24 00:03:59
+39,Brigitte Gay de Alexandre,Psychiatre,"8 Rue de Ponthieu, Paris 17",48.885713,2.315199,2025-02-25 01:03:59,2025-02-24 23:03:59,2025-02-25 02:03:59
+40,Daniel Faure,Gynécologue,"5 Boulevard Pereire, Paris 17",48.882902,2.322121,2025-02-25 02:03:59,2025-02-25 03:03:59,2025-02-25 02:03:59
+41,Margaud Pelletier,Orthopédiste,"3 Rue de la Maison, Paris 17",48.884351,2.31972,2025-02-17 02:03:59,2025-02-16 23:03:59,2025-02-17 03:03:59
+42,Thomas Rossi,Gynécologue,"2 Rue de l'Armée, Paris 17",48.871576,2.32181,2025-02-25 23:03:59,2025-02-26 03:03:59,2025-02-26 01:03:59
+43,Suzanne Valentin,Chirurgien,"10 Rue de la Plage, Paris 17",48.889289,2.318365,2025-02-20 03:03:59,2025-02-20 00:03:59,2025-02-19 23:03:59
+44,Dominique Fournier,Cardiologue,"8 Rue de Ponthieu, Paris 17",48.882155,2.304908,2025-02-17 03:03:59,2025-02-17 00:03:59,2025-02-17 03:03:59
+45,Guillaume Le Roux,Orthopédiste,"9 Rue de la Ville, Paris 17",48.886727,2.315489,2025-02-21 01:03:59,2025-02-21 03:03:59,2025-02-21 02:03:59
+46,Camille Cousin-Guibert,Médecin Généraliste,"10 Rue de la Plage, Paris 17",48.874815,2.319873,2025-02-25 00:03:59,2025-02-25 01:03:59,2025-02-25 03:03:59
+47,Yves du Bouvier,Médecin Généraliste,"2 Rue de l'Armée, Paris 17",48.874468,2.320465,2025-02-18 00:03:59,2025-02-18 01:03:59,2025-02-17 23:03:59
+48,Charles Paris de Lacombe,Chirurgien,"7 Avenue de la Grande Armée, Paris 17",48.872311,2.304518,2025-02-18 23:03:59,2025-02-19 00:03:59,2025-02-19 03:03:59
+49,Audrey Hoareau,Orthopédiste,"7 Avenue de la Grande Armée, Paris 17",48.882338,2.313477,2025-02-26 00:03:59,2025-02-26 02:03:59,2025-02-26 02:03:59
+50,Philippine Lamy-Louis,Psychiatre,"3 Rue de la Maison, Paris 17",48.873904,2.317037,2025-02-18 23:03:59,2025-02-19 01:03:59,2025-02-19 01:03:59
+51,Laure-Émilie Gosselin,Cardiologue,"1 Rue de la Fédération, Paris 17",48.883898,2.312294,2025-02-20 23:03:59,2025-02-21 02:03:59,2025-02-21 01:03:59
+52,Andrée Foucher,Orthopédiste,"6 Rue de Tocqueville, Paris 17",48.882637,2.305852,2025-02-23 02:03:59,2025-02-23 02:03:59,2025-02-22 23:03:59
+53,François Ribeiro-Picard,Pédiatre,"2 Rue de l'Armée, Paris 17",48.872716,2.309077,2025-02-17 00:03:59,2025-02-17 02:03:59,2025-02-17 00:03:59
+54,Suzanne Le Brunet,Gynécologue,"3 Rue de la Maison, Paris 17",48.884561,2.311983,2025-02-20 01:03:59,2025-02-20 01:03:59,2025-02-20 01:03:59
+55,Élise Schmitt,Médecin Généraliste,"3 Rue de la Maison, Paris 17",48.885223,2.322446,2025-02-18 02:03:59,2025-02-18 00:03:59,2025-02-18 02:03:59
+56,Victor-Frédéric Gaillard,Orthopédiste,"1 Rue de la Fédération, Paris 17",48.878953,2.305562,2025-02-23 01:03:59,2025-02-23 01:03:59,2025-02-23 03:03:59
+57,Roland Louis,Orthopédiste,"10 Rue de la Plage, Paris 17",48.887457,2.318035,2025-02-23 23:03:59,2025-02-24 01:03:59,2025-02-23 23:03:59
+58,Nicole Bernard de Perrot,Dermatologue,"1 Rue de la Fédération, Paris 17",48.880463,2.306134,2025-02-26 01:03:59,2025-02-26 01:03:59,2025-02-26 01:03:59
+59,Suzanne Weber,Pédiatre,"4 Rue de l'Esplanade, Paris 17",48.874163,2.302621,2025-02-26 01:03:59,2025-02-25 23:03:59,2025-02-26 02:03:59
+60,Susan Coste de Leclercq,Cardiologue,"5 Boulevard Pereire, Paris 17",48.87151,2.308619,2025-02-24 23:03:59,2025-02-25 02:03:59,2025-02-24 23:03:59
+61,Françoise Perrin,Psychiatre,"9 Rue de la Ville, Paris 17",48.872168,2.314913,2025-02-19 00:03:59,2025-02-19 01:03:59,2025-02-18 23:03:59
+62,Auguste Barthelemy,Chirurgien,"5 Boulevard Pereire, Paris 17",48.889051,2.311879,2025-02-23 23:03:59,2025-02-24 03:03:59,2025-02-24 02:03:59
+63,Lucie Sanchez de Bruneau,Cardiologue,"3 Rue de la Maison, Paris 17",48.88487,2.321872,2025-02-17 03:03:59,2025-02-17 03:03:59,2025-02-17 03:03:59
+64,René Bourgeois,Médecin Généraliste,"2 Rue de l'Armée, Paris 17",48.882741,2.313636,2025-02-18 23:03:59,2025-02-19 00:03:59,2025-02-18 23:03:59
+65,Thérèse Le Delmas,Psychiatre,"1 Rue de la Fédération, Paris 17",48.88243,2.318992,2025-02-18 03:03:59,2025-02-18 00:03:59,2025-02-17 23:03:59
+66,Olivier Georges Le Rossi,Pédiatre,"2 Rue de l'Armée, Paris 17",48.879769,2.30473,2025-02-24 00:03:59,2025-02-23 23:03:59,2025-02-24 02:03:59
+67,François Delattre,Médecin Généraliste,"1 Rue de la Fédération, Paris 17",48.876376,2.318432,2025-02-22 02:03:59,2025-02-22 01:03:59,2025-02-22 03:03:59
+68,Arthur-Édouard Millet,Chirurgien,"6 Rue de Tocqueville, Paris 17",48.880012,2.314777,2025-02-22 01:03:59,2025-02-21 23:03:59,2025-02-22 03:03:59
+69,Susanne-Margot Ramos,Pédiatre,"4 Rue de l'Esplanade, Paris 17",48.874587,2.307868,2025-02-21 00:03:59,2025-02-21 03:03:59,2025-02-21 00:03:59
+70,Grégoire Maury,Neurologue,"7 Avenue de la Grande Armée, Paris 17",48.887055,2.31655,2025-02-21 02:03:59,2025-02-21 02:03:59,2025-02-21 01:03:59
+71,Jules Gosselin,Dermatologue,"5 Boulevard Pereire, Paris 17",48.879501,2.304682,2025-02-25 01:03:59,2025-02-25 01:03:59,2025-02-24 23:03:59
+72,Célina Le Leduc,Neurologue,"5 Boulevard Pereire, Paris 17",48.871902,2.320507,2025-02-17 03:03:59,2025-02-17 02:03:59,2025-02-17 00:03:59
+73,Madeleine Georges,Dermatologue,"9 Rue de la Ville, Paris 17",48.876645,2.321896,2025-02-19 01:03:59,2025-02-18 23:03:59,2025-02-19 01:03:59
+74,Grégoire de la Barbe,Neurologue,"5 Boulevard Pereire, Paris 17",48.875669,2.321981,2025-02-18 23:03:59,2025-02-19 00:03:59,2025-02-19 00:03:59
+75,Isabelle Guibert,Gynécologue,"10 Rue de la Plage, Paris 17",48.876974,2.322443,2025-02-19 03:03:59,2025-02-18 23:03:59,2025-02-19 02:03:59
+76,Benoît-François Moreno,Médecin Généraliste,"1 Rue de la Fédération, Paris 17",48.880288,2.314626,2025-02-18 23:03:59,2025-02-19 01:03:59,2025-02-19 00:03:59
+77,Paulette Dumont de la Andre,Gynécologue,"6 Rue de Tocqueville, Paris 17",48.877373,2.305713,2025-02-23 01:03:59,2025-02-23 03:03:59,2025-02-23 02:03:59
+78,Amélie Legros-Mary,Chirurgien,"3 Rue de la Maison, Paris 17",48.887813,2.313998,2025-02-22 01:03:59,2025-02-22 02:03:59,2025-02-21 23:03:59
+79,Alfred Duhamel,Gynécologue,"1 Rue de la Fédération, Paris 17",48.884391,2.303149,2025-02-23 00:03:59,2025-02-23 02:03:59,2025-02-23 00:03:59
+80,Zoé Lemaître,Pédiatre,"4 Rue de l'Esplanade, Paris 17",48.887673,2.304602,2025-02-17 02:03:59,2025-02-17 03:03:59,2025-02-17 02:03:59
+81,Susan Imbert-Noël,Cardiologue,"8 Rue de Ponthieu, Paris 17",48.881489,2.318683,2025-02-19 02:03:59,2025-02-18 23:03:59,2025-02-19 03:03:59
+82,Gérard Delattre-Aubert,Médecin Généraliste,"1 Rue de la Fédération, Paris 17",48.887044,2.31213,2025-02-26 01:03:59,2025-02-26 00:03:59,2025-02-25 23:03:59
+83,Claire Tessier,Gynécologue,"3 Rue de la Maison, Paris 17",48.888948,2.30596,2025-02-21 01:03:59,2025-02-21 03:03:59,2025-02-20 23:03:59
+84,Aimée Martineau,Orthopédiste,"6 Rue de Tocqueville, Paris 17",48.881385,2.321738,2025-02-21 01:03:59,2025-02-21 03:03:59,2025-02-21 01:03:59
+85,Brigitte Roy,Chirurgien,"3 Rue de la Maison, Paris 17",48.879606,2.304392,2025-02-19 02:03:59,2025-02-19 03:03:59,2025-02-18 23:03:59
+86,Raymond Fouquet,Chirurgien,"3 Rue de la Maison, Paris 17",48.884237,2.307182,2025-02-24 02:03:59,2025-02-24 03:03:59,2025-02-23 23:03:59
+87,Diane du Pereira,Dermatologue,"1 Rue de la Fédération, Paris 17",48.88962,2.305159,2025-02-24 00:03:59,2025-02-24 03:03:59,2025-02-23 23:03:59
+88,Patricia Rousset,Cardiologue,"7 Avenue de la Grande Armée, Paris 17",48.874005,2.303146,2025-02-22 23:03:59,2025-02-23 03:03:59,2025-02-22 23:03:59
+89,Alphonse Rodriguez,Médecin Généraliste,"9 Rue de la Ville, Paris 17",48.881413,2.306419,2025-02-24 01:03:59,2025-02-24 02:03:59,2025-02-24 00:03:59
+90,Antoine Bonnin,Cardiologue,"3 Rue de la Maison, Paris 17",48.877366,2.304547,2025-02-17 01:03:59,2025-02-17 02:03:59,2025-02-16 23:03:59
+91,Martine Weber,Chirurgien,"2 Rue de l'Armée, Paris 17",48.871684,2.316088,2025-02-18 03:03:59,2025-02-17 23:03:59,2025-02-18 00:03:59
+92,Aimée de Lelièvre,Neurologue,"1 Rue de la Fédération, Paris 17",48.877763,2.311081,2025-02-17 23:03:59,2025-02-17 23:03:59,2025-02-18 01:03:59
+93,Juliette Lévy,Orthopédiste,"9 Rue de la Ville, Paris 17",48.888473,2.307887,2025-02-24 02:03:59,2025-02-23 23:03:59,2025-02-24 01:03:59
+94,Nicolas de Tessier,Médecin Généraliste,"3 Rue de la Maison, Paris 17",48.87772,2.316117,2025-02-20 01:03:59,2025-02-20 03:03:59,2025-02-20 02:03:59
+95,Virginie Lefebvre,Neurologue,"9 Rue de la Ville, Paris 17",48.883023,2.313506,2025-02-18 23:03:59,2025-02-19 00:03:59,2025-02-19 03:03:59
+96,Dominique-Aimée Coulon,Orthopédiste,"4 Rue de l'Esplanade, Paris 17",48.879002,2.314549,2025-02-20 02:03:59,2025-02-20 03:03:59,2025-02-20 03:03:59
+97,Stéphane Grenier,Médecin Généraliste,"2 Rue de l'Armée, Paris 17",48.871852,2.313722,2025-02-22 01:03:59,2025-02-22 03:03:59,2025-02-22 01:03:59
+98,Thibaut Chauvet,Médecin Généraliste,"5 Boulevard Pereire, Paris 17",48.886729,2.3028,2025-02-19 03:03:59,2025-02-18 23:03:59,2025-02-19 03:03:59
+99,Charlotte de la Becker,Pédiatre,"1 Rue de la Fédération, Paris 17",48.887383,2.307665,2025-02-17 02:03:59,2025-02-17 02:03:59,2025-02-17 01:03:59
+100,Michelle Diallo de Navarro,Pédiatre,"9 Rue de la Ville, Paris 17",48.880516,2.310003,2025-02-17 00:03:59,2025-02-17 03:03:59,2025-02-17 01:03:59
