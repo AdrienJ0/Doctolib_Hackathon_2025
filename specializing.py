@@ -1,10 +1,30 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import openai
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import spacy
+import os
+import requests
+from spacy.cli import download
 
 # Load medical NER model
-nlp = spacy.load("en_core_med7_lg")  # Requires installation of `en_core_med7_lg`
+download("en_core_web_md")
+nlp = spacy.load("en_core_web_md")  # Ensure model is installed separately
+
+# Use a smaller transformer model like distilGPT-2
+MODEL_NAME = "distilgpt2"
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
+from transformers import BitsAndBytesConfig
+
+quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+
+model = AutoModelForCausalLM.from_pretrained(
+    MODEL_NAME,
+    torch_dtype=torch.float32,  # Use float32 for CPU compatibility
+    device_map="cpu",  # Ensure it's on the CPU
+    offload_folder="offload_dir"
+)
 
 # Mapping keywords to medical specialties
 MEDICAL_SPECIALTIES = {
@@ -49,6 +69,14 @@ def restrict_response_format(response_text: str) -> str:
             return response_text
     return "I'm sorry, but I can only provide a summary, next steps, or suggested actions. Please clarify your question."
 
+def generate_response(prompt: str) -> str:
+    """Generates a response using the smaller transformer model."""
+    inputs = tokenizer(prompt, return_tensors="pt").to("cpu")  # Move to CPU for smaller model
+    with torch.no_grad():
+        output = model.generate(**inputs, max_new_tokens=200, temperature=0.7)
+    response = tokenizer.decode(output[0], skip_special_tokens=True)
+    return response
+
 @app.post("/chat")
 def chat(request: ChatRequest):
     if not request.conversation:
@@ -71,12 +99,10 @@ def chat(request: ChatRequest):
               "\n\n"
               + "\n".join(request.conversation) + "\nAI:")
     
-    # Call OpenAI API
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": prompt}]
-    )
-    
-    formatted_response = restrict_response_format(response["choices"][0]["message"]["content"])
+    try:
+        response_text = generate_response(prompt)
+        formatted_response = restrict_response_format(response_text)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating response: {str(e)}")
     
     return {"response": formatted_response}
