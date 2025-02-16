@@ -1,39 +1,40 @@
-version: '3.11'
+version: '3.8'
 
 services:
-  fastapi-app:
-    build: .
-    container_name: fastapi-medical-assistant
-    ports:
-      - "8006:8006"
-    volumes:
-      - .:/app
-    environment:
-      - MONGO_URI=mongodb://medical_user:securepassword@mongodb:27017/medical_db
-      - CUDA_VISIBLE_DEVICES=0
-    depends_on:
-      - mongodb
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
-    restart: always
-
   mongodb:
-    image: mongo:6.0
-    container_name: mongodb-instance
+    image: mongo:latest
+    container_name: mongo
     ports:
       - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: adminpassword
     volumes:
       - mongodb_data:/data/db
-      - ./mongo_init.js:/docker-entrypoint-initdb.d/mongo_init.js
-    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+      MONGO_INITDB_DATABASE: medical_db
+    networks:
+      - app-network
+
+  streamlit:
+    image: python:3.11-slim
+    container_name: streamlit
+    working_dir: /app
+    volumes:
+      - ./streamlit:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_ENABLECORS=false
+      - STREAMLIT_SERVER_PORT=8501
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+    command: bash -c "pip install -r requirements.txt && streamlit run app.py"
+
+networks:
+  app-network:
+    driver: bridge
 
 volumes:
   mongodb_data:
-    driver: local
