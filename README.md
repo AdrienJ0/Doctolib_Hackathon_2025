@@ -119,8 +119,13 @@ Patients can also use our system to make appointments.
 
 # Case 2
 
+Another case, a patient with diabetes:
+
 ![Case 2 - 1](imgs_readme/case2%201%20.png)
 ![Case 2 - 2](imgs_readme/case2%202.png)
+
+We can see parts of the large model analysis report and the results.
+
 ![Case 2 - PDF](imgs_readme/case%202%20pdf.png)
 ![Case 2 - 3](imgs_readme/case2%203.png)
 ![Case 2 - 4](imgs_readme/case2%204.png)
