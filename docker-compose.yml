@@ -5,11 +5,14 @@ services:
     build: .
     container_name: fastapi-medical-assistant
     ports:
-      - "8000:8000"
+      - "8006:8006"
     volumes:
       - .:/app
     environment:
-      - CUDA_VISIBLE_DEVICES=0  # Ensure GPU usage
+      - MONGO_URI=mongodb://medical_user:securepassword@mongodb:27017/medical_db
+      - CUDA_VISIBLE_DEVICES=0
+    depends_on:
+      - mongodb
     deploy:
       resources:
         reservations:
@@ -17,3 +20,20 @@ services:
             - driver: nvidia
               capabilities: [gpu]
     restart: always
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb-instance
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: adminpassword
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo_init.js:/docker-entrypoint-initdb.d/mongo_init.js
+    restart: always
+
+volumes:
+  mongodb_data:
+    driver: local
