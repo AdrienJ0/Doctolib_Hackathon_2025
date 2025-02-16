@@ -36,7 +36,7 @@ API_KEY="your_api_key_here"
 
 # Running the App
 
-(or use docker)
+**NB:** The deployment is under progress. If you want to run it go on the branch "docker_deployment"
 
 To run the Streamlit app, use the following command:
 
