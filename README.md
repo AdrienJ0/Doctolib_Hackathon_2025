@@ -89,6 +89,24 @@ Code Structure
         Patients can select their available dates and share their current location for more accurate doctor matching.
         The system ranks available doctors based on proximity and availability, allowing the patient to select their preferred doctors.
 
+# Case 1
+
+![Case 1 - 1](case1%201%20info.png)
+![Case 1 - 2](case1%202.png)
+![Case 1 - 3](case1%203.png)
+![Case 1 - 4](case1%204%20sum.png)
+![Case 1 - 5](case1%205%20sever.png)
+![Case 1 - 6](case1%206%20appoint.png)
+
+# Case 2
+
+![Case 2 - 1](case2%201%20.png)
+![Case 2 - 2](case2%202.png)
+![Case 2 - 3](case2%203.png)
+![Case 2 - 4](case2%204.png)
+![Case 2 - 5](case%202%205.png)
+![Case 2 - PDF](case%202%20pdf.png)
+
 # Future Improvements
 
     Real-Time Data Sync: Integrate with a database to manage live clinician and patient data.
