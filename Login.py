@@ -21,7 +21,6 @@ def main():
     
     st.markdown("Don't have an account? [Sign Up](#)")
     st.markdown('</div>', unsafe_allow_html=True)
-    st.sidebar.success("Select a demo above.")
     
 def nav_page(page_name, timeout_secs=3):
     nav_script = """
