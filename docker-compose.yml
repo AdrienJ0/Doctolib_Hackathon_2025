@@ -1,0 +1,19 @@
+version: '3.11'
+
+services:
+  fastapi-app:
+    build: .
+    container_name: fastapi-medical-assistant
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - CUDA_VISIBLE_DEVICES=0  # Ensure GPU usage
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    restart: always
