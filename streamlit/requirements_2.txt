@@ -109,3 +109,4 @@ urllib3==2.3.0
 watchdog==6.0.0
 wcwidth==0.2.13
 tools
+fitz
