@@ -104,8 +104,8 @@ Code Structure
 ![Case 2 - 2](case2%202.png)
 ![Case 2 - 3](case2%203.png)
 ![Case 2 - 4](case2%204.png)
-![Case 2 - 5](case%202%205.png)
-![Case 2 - PDF](case%202%20pdf.png)
+![Case 2 - 5](case2%205.png)
+![Case 2 - PDF](case2%20pdf.png)
 
 # Future Improvements
 
