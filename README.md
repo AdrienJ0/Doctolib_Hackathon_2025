@@ -6,10 +6,6 @@ This is a medical platform dashboard built with **Streamlit**, designed to facil
 
 https://drive.google.com/file/d/1jITYZV9DPo5QpHVf4uc4i6nl40kALVSo/view?usp=sharing
 
-## 🎥 Demo Video
-
-[![Watch the Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://github.com/AdrienJ0/Doctolib_Hackathon_2025/blob/main/demo.mp4)
-
 
 ## Features
 
