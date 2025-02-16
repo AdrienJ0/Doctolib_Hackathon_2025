@@ -121,10 +121,11 @@ Patients can also use our system to make appointments.
 
 ![Case 2 - 1](imgs_readme/case2%201%20.png)
 ![Case 2 - 2](imgs_readme/case2%202.png)
+![Case 2 - PDF](imgs_readme/case%202%20pdf.png)
 ![Case 2 - 3](imgs_readme/case2%203.png)
 ![Case 2 - 4](imgs_readme/case2%204.png)
-![Case 2 - 5](imgs_readme/case2%205.png)
-![Case 2 - PDF](imgs_readme/case2%20pdf.png)
+![Case 2 - 5](imgs_readme/case%202%205.png)
+
 
 # Future Improvements
 
