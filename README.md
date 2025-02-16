@@ -40,10 +40,11 @@ API_KEY="your_api_key_here"
 
 To run the Streamlit app, use the following command:
 
-streamlit run app.py
+`streamlit run Login.py`
 
-Where app.py is the Python script containing the Streamlit app.
-Functionality Breakdown
+Where Login.py is the Python script containing the Streamlit app.
+
+# Functionality Breakdown
 1. Clinician Dashboard
 
     Appointment Calendar: Displays upcoming appointments for the selected clinician, using fullcalendar.
@@ -69,8 +70,8 @@ Functionality Breakdown
 The system ensures that only the necessary information is shared based on the patient's consent.
 Code Structure
 
-    app.py: The main Streamlit application file containing the UI components and logic for clinician and patient management.
-    data: Contains the sample data for doctors, patients, and new patient requests. This data can be replaced with live data sources or a database in production.
+    Login.py: The main Streamlit application file containing the UI components and logic for clinician and patient management.
+    resources: Contains the sample data for doctors, patients, and new patient requests. This data can be replaced with live data sources or a database in production.
     requirements.txt: A text file listing all Python dependencies required for running the app.
     .env: (Optional) Stores environment variables like the Google Maps API key for location services.
 
