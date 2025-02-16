@@ -6,6 +6,10 @@ This is a medical platform dashboard built with **Streamlit**, designed to facil
 
 https://drive.google.com/file/d/1jITYZV9DPo5QpHVf4uc4i6nl40kALVSo/view?usp=sharing
 
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://drive.google.com/file/d/1jITYZV9DPo5QpHVf4uc4i6nl40kALVSo/view?usp=sharing)
+
 ## Features
 
 - **Clinician Dashboard**: View and manage current appointments, verify new patient requests, and match patients based on location and availability.
