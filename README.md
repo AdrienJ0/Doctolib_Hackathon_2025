@@ -36,9 +36,7 @@ API_KEY="your_api_key_here"
 
 # Running the App
 
-(or 
-
-use docker)
+(or use docker)
 
 To run the Streamlit app, use the following command:
 
