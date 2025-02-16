@@ -2,6 +2,10 @@
 
 This is a medical platform dashboard built with **Streamlit**, designed to facilitate the process of doctor-patient matchmaking, appointment management, and consultation requests. The platform includes features for clinicians to manage their appointments, interact with patient requests, and match patients with available doctors based on their location and availability.
 
+## Here is the demo 
+
+https://drive.google.com/file/d/1jITYZV9DPo5QpHVf4uc4i6nl40kALVSo/view?usp=sharing
+
 ## Features
 
 - **Clinician Dashboard**: View and manage current appointments, verify new patient requests, and match patients based on location and availability.
