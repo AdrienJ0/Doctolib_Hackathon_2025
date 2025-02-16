@@ -18,8 +18,8 @@ clinicians = pd.DataFrame({
 st.title("📩 Send Availability & Symptoms to Your Clinician")
 
 # Patient Name Input
-st.header("Patient Information")
-patient_name = st.text_input("Your Name", "")
+# st.header("Patient Information (To Suppress)")
+# patient_name = st.text_input("Your Name", "")
 
 # Dedicated Clinician Input
 st.header("Your Dedicated Clinician")
@@ -53,9 +53,9 @@ else:
     st.warning("Please verify your clinician to see available days.")
 
 # Sidebar for Reporting Symptoms
-st.sidebar.header("Report Your Symptoms")
-symptom_severity = st.sidebar.slider("Rate Your Symptom Severity (1-10)", 1, 10, 5)
-symptom_description = st.sidebar.text_area("Describe Your Symptoms")
+# st.sidebar.header("Report Your Symptoms")
+# symptom_severity = st.sidebar.slider("Rate Your Symptom Severity (1-10)", 1, 10, 5)
+# symptom_description = st.sidebar.text_area("Describe Your Symptoms")
 
 # Consent Pop-up before sending request
 st.header("Data Sharing Consent")

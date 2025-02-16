@@ -4,6 +4,13 @@ import numpy as np
 from geopy.distance import geodesic
 import datetime
 
+
+## TODO: Make it works
+# import googlemaps
+
+# Initialize Google Maps client with your API key
+# gmaps = googlemaps.Client(key="YOUR_GOOGLE_MAPS_API_KEY")
+
 # Sample doctor data (id, name, location, specialty, availability)
 doctors = pd.DataFrame({
     "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -17,30 +24,39 @@ doctors = pd.DataFrame({
 # Streamlit App Title
 st.title("🏥 Medical Matchmaking System")
 
-# Patient Name Input
-st.header("Patient Information")
-patient_name = st.text_input("Your Name", "")
-
 # Availability Selection
 st.header("Select Your Availability")
 selected_dates = st.date_input("Choose your available dates", [], min_value=datetime.date.today(), max_value=datetime.date.today() + datetime.timedelta(days=30))
 
-# Consent for location access
-st.header("Location Access Consent")
+# Sidebar for Additional Patient Information
+# st.sidebar.header("Additional Patient Information (To Hide)")
+
+# Consent for location access in sidebar
+st.subheader("Location Access Consent")
 share_location = st.checkbox("Allow access to your current location?")
 latitude, longitude = None, None
-if share_location:
-    latitude = st.number_input("Your Latitude", value=40.5, format="%.6f")
-    longitude = st.number_input("Your Longitude", value=-73.5, format="%.6f")
 
-# Sidebar for Additional Patient Information
-st.sidebar.header("Additional Patient Information")
+if share_location:
+    latitude = st.sidebar.number_input("Your Latitude (To Hide)", value=40.5, format="%.6f")
+    longitude = st.sidebar.number_input("Your Longitude (To Hide)", value=-73.5, format="%.6f")
+
+    ## TODO: Make GoogleMaps API works
+    
+    # Get the address using Google Maps Geocoding API
+    # geocode_result = gmaps.reverse_geocode((latitude, longitude))
+    # if geocode_result:
+    #     address = geocode_result[0]['formatted_address']
+    #     st.sidebar.write(f"Your current address: {address}")
+    # else:
+    #     st.sidebar.write("Unable to retrieve address. Please check your location.")
 
 # Symptom Severity
-symptom_severity = st.sidebar.slider("Rate Your Symptom Severity (1-10)", 1, 10, 5)
+# symptom_severity = st.sidebar.slider("Rate Your Symptom Severity (1-10)", 1, 10, 5)
 
+## TODO: Make x variable
 # Number of doctors patient can select
-x = st.sidebar.number_input("Number of doctors to select", min_value=1, max_value=10, value=3)
+# x = st.sidebar.number_input("Number of doctors to select (To Hide)", min_value=1, max_value=10, value=3)
+x = 3
 
 # Initialize session state for selections
 if "selected_doctors" not in st.session_state:
