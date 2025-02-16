@@ -94,7 +94,7 @@ Code Structure
 
 # Case 1
 
-![Case 1 - 1](case1%201%20info.png)
+![Case 1 - 1](imgs_readme/case1%201%20info.png)
 ![Case 1 - 2](case1%202.png)
 ![Case 1 - 3](case1%203.png)
 ![Case 1 - 4](case1%204%20sum.png)
