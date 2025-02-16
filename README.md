@@ -95,20 +95,20 @@ Code Structure
 # Case 1
 
 ![Case 1 - 1](imgs_readme/case1%201%20info.png)
-![Case 1 - 2](case1%202.png)
-![Case 1 - 3](case1%203.png)
-![Case 1 - 4](case1%204%20sum.png)
-![Case 1 - 5](case1%205%20sever.png)
-![Case 1 - 6](case1%206%20appoint.png)
+![Case 1 - 2](imgs_readme/case1%202.png)
+![Case 1 - 3](imgs_readme/case1%203.png)
+![Case 1 - 4](imgs_readme/case1%204%20sum.png)
+![Case 1 - 5](imgs_readme/case1%205%20sever.png)
+![Case 1 - 6](imgs_readme/case1%206%20appoint.png)
 
 # Case 2
 
-![Case 2 - 1](case2%201%20.png)
-![Case 2 - 2](case2%202.png)
-![Case 2 - 3](case2%203.png)
-![Case 2 - 4](case2%204.png)
-![Case 2 - 5](case2%205.png)
-![Case 2 - PDF](case2%20pdf.png)
+![Case 2 - 1](imgs_readme/case2%201%20.png)
+![Case 2 - 2](imgs_readme/case2%202.png)
+![Case 2 - 3](imgs_readme/case2%203.png)
+![Case 2 - 4](imgs_readme/case2%204.png)
+![Case 2 - 5](imgs_readme/case2%205.png)
+![Case 2 - PDF](imgs_readme/case2%20pdf.png)
 
 # Future Improvements
 
