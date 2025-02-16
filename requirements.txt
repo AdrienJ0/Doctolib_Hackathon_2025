@@ -1,0 +1,21 @@
+# Core Python Libraries
+openai==1.2.0  # For accessing DeepSeek, Mistral, and Pixtral
+requests==2.31.0  # For API requests
+
+# PDF Processing
+PyMuPDF==1.22.5  # Extract text from PDFs
+pdf2image==1.16.3  # Convert PDF pages to images
+pillow==10.1.0  # Image processing for OCR
+
+# OCR (for scanned PDFs)
+pytesseract==0.3.10  # Optical Character Recognition (OCR)
+tesseract==0.1.3  # Tesseract engine (ensure installed separately)
+
+# Web Framework (Optional for Deployment)
+flask==3.0.0  # For building an API
+streamlit==1.30.0  # For chatbot UI
+fastapi==0.103.0  # Alternative to Flask
+
+# Other Utilities
+numpy==1.24.3  # Numerical processing
+pandas==1.5.3  # Data handling
