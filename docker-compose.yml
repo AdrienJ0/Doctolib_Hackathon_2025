@@ -2,7 +2,7 @@ version: '3.11'
 
 services:
   mongodb:
-    image: mongo:6
+    image: mongo:latest
     container_name: mongodb
     ports:
       - "27017:27017"
@@ -25,6 +25,7 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: medical_user
       ME_CONFIG_MONGODB_ADMINPASSWORD: securepassword
       ME_CONFIG_MONGODB_SERVER: mongodb
+      MONGO_URL: mongodb://medical_user:securepassword@mongodb:27017  # Updated password
     depends_on:
       - mongodb
     networks:
