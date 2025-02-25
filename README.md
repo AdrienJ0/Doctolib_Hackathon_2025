@@ -143,8 +143,5 @@ We can see parts of the large model analysis report and the results.
 # Contributing
 
 If you'd like to contribute to the project, feel free to fork the repository, make improvements, and submit a pull request.
-License
-
-This project is licensed under the MIT License.
 
 
